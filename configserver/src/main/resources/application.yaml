@@ -1,5 +1,18 @@
+server:
+  port: 8888
+
 spring:
   application:
     name: configserver
   profiles:
     active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///home/mario/Documents/projects/web/back/java/e-commerce/configserver
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
