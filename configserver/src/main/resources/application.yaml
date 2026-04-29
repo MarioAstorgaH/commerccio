@@ -10,7 +10,7 @@ spring:
     config:
       server:
         native:
-          search-locations: file:///home/mario/Documents/projects/web/back/java/e-commerce/configserver
+          search-locations: file:./configserver
 
 eureka:
   client:
